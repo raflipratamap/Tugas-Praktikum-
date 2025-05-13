@@ -48,5 +48,34 @@ Proyek Sentiment Analysis menggunakan metode Support Vector Machine (SVM) untuk 
 5. Evaluasi Performa  
 
 ## 🚀 Instalasi  
+# Clone repository  
+git clone https://github.com/username/sentiment-analysis.git  
+
+# Buat environment virtual  
+python -m venv venv  
+source venv/bin/activate  # Linux/Mac  
+venv\Scripts\activate    # Windows  
+
+# Install dependencies  
+pip install -r requirements.txt  
+
+# Download NLTK data  
+python -m nltk.downloader punkt stopwords
+
+**📈 Contoh Penggunaan**
+# Prediksi sentimen  
+from model import predict_sentiment  
+
+review = "Produk ini luar biasa!"  
+sentiment = predict_sentiment(review)  
+print(f"Sentimen: {sentiment}")
+
+**📊 Performa Model**
+Metrik	Skor
+Akurasi	91%
+Precision	91.5%
+Recall	91.5%
+F1-Score	91.5%
+
 
 
